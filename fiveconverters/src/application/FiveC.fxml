@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FiveCController">
+   <children>
+      <TabPane layoutX="36.0" layoutY="26.0" prefHeight="400.0" prefWidth="450.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+            <Tab text="Acceuil">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="107.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les cinq grands convertisseurs" underline="true">
+                           <font>
+                              <Font name="Apple Chancery" size="19.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="61.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dans ce projet, j'ai créé 5 convertisseurs: Temps, Volume, Masse, Stockage numérique et Longueur. Les convertisseurs de longueur et de masse sont en systèmes impériaux et métriques." wrappingWidth="327.09423828125" />
+                        <Button fx:id="btn1" layoutX="343.0" layoutY="297.0" mnemonicParsing="false" onAction="#fermer" text="Exit" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Temp">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtT1" layoutX="30.0" layoutY="93.0" onKeyReleased="#calculerT1" text="1" />
+                        <TextField fx:id="txtT2" layoutX="243.0" layoutY="93.0" onKeyReleased="#calculerT2" text="1" />
+                        <ComboBox fx:id="cboT1" layoutX="39.0" layoutY="120.0" onAction="#calculerT1" prefWidth="150.0" />
+                        <ComboBox fx:id="cboT2" layoutX="252.0" layoutY="120.0" onAction="#calculerT2" prefWidth="150.0" />
+                        <Button layoutX="364.0" layoutY="293.0" mnemonicParsing="false" onAction="#fermer" text="Exit" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Volume">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtV1" layoutX="32.0" layoutY="89.0" onKeyReleased="#calculerV1" text="1" />
+                        <TextField fx:id="txtV2" layoutX="225.0" layoutY="89.0" onKeyReleased="#calculerV2" text="1" />
+                        <ComboBox fx:id="cboV1" layoutX="41.0" layoutY="116.0" onAction="#calculerV1" prefWidth="150.0" />
+                        <ComboBox fx:id="cboV2" layoutX="234.0" layoutY="116.0" onAction="#calculerV2" prefWidth="150.0" />
+                        <Button layoutX="363.0" layoutY="296.0" mnemonicParsing="false" onAction="#fermer" text="Exit" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Mass">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtM1" layoutX="42.0" layoutY="97.0" onKeyReleased="#calculerM1" text="1" />
+                        <TextField fx:id="txtM2" layoutX="232.0" layoutY="97.0" onKeyReleased="#calculerM2" text="1" />
+                        <ComboBox fx:id="cboM1" layoutX="51.0" layoutY="124.0" onAction="#calculerM1" prefWidth="150.0" />
+                        <ComboBox fx:id="cboM2" layoutX="241.0" layoutY="124.0" onAction="#calculerM2" prefWidth="150.0" />
+                        <Button layoutX="362.0" layoutY="286.0" mnemonicParsing="false" onAction="#fermer" text="Exit" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Stockage Digitale">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtSD1" layoutX="36.0" layoutY="97.0" onKeyReleased="#calculerSD1" text="1" />
+                        <TextField fx:id="txtSD2" layoutX="269.0" layoutY="97.0" onKeyReleased="#calculerSD2" text="1" />
+                        <ComboBox fx:id="cboSD1" layoutX="45.0" layoutY="124.0" onAction="#calculerSD1" prefWidth="150.0" />
+                        <ComboBox fx:id="cboSD2" layoutX="278.0" layoutY="124.0" onAction="#calculerSD2" prefWidth="150.0" />
+                        <Button layoutX="360.0" layoutY="293.0" mnemonicParsing="false" onAction="#fermer" text="Exit" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Longeur">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtIS1" layoutX="33.0" layoutY="84.0" onKeyReleased="#calculerIS1" text="1" />
+                        <TextField fx:id="txtIS2" layoutX="248.0" layoutY="84.0" onKeyReleased="#calculerIS2" text="1" />
+                        <ComboBox fx:id="cboIS1" layoutX="42.0" layoutY="111.0" onAction="#calculerIS1" prefWidth="150.0" />
+                        <ComboBox fx:id="cboIS2" layoutX="257.0" layoutY="111.0" onAction="#calculerIS2" prefWidth="150.0" />
+                        <Button layoutX="356.0" layoutY="288.0" mnemonicParsing="false" onAction="#fermer" text="Exit" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
