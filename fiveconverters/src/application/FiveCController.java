@@ -122,7 +122,7 @@ public class FiveCController implements Initializable {
     double []tabIS= {1.0,1.6,1600.0,1760.0,5280.0,160000.0,63360.0};
     
     @FXML
-    void fermer ()
+    void fermer () // Method pour le exit button
     {
     	System.exit(0);
     }
